@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ProgramSuite]">
+  <test name="ProgramTest">
+    <classes>
+      <class name="testng.SampleProgramOne"/>
+      <class name="testng.SampleProgramTwo"/>
+    </classes>
+  </test> <!-- ProgramTest -->
+  <test name="ProgramTest(failed)">
+    <classes>
+      <class name="testng.SampleProgramOne">
+        <methods>
+          <include name="testTwo"/>
+        </methods>
+      </class> <!-- testng.SampleProgramOne -->
+      <class name="testng.SampleProgramTwo">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testng.SampleProgramTwo -->
+    </classes>
+  </test> <!-- ProgramTest(failed) -->
+</suite> <!-- Failed suite [ProgramSuite] -->
